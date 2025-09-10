@@ -88,3 +88,13 @@
 ## gitignore.io 는 어떤 서비스인가?
 
 [gitignore.io](https://www.toptal.com/developers/gitignore/) 는 특정 언어, 프레임워크, IDE에 맞는 .gitignore 템플릿을 자동으로 생성해주는 서비스.
+
+# github
+
+## 원격 저장소 생성, 연결, 동기화
+
+1. 원격 저장소 생성
+2. 지역 저장소 - 원격 저장소 연결
+3. 지역 저장소 -> 원격 저장소 push
+4. 원격 저장소 파일 생성
+5. 지역 저장소 <- 원격 저장소 pull
