@@ -1,0 +1,191 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link
+      as="style"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans+KR%3Awght%40400%3B500%3B700%3B900"
+      onload="this.rel='stylesheet'"
+      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+      :root {
+        --primary-50: #fef2f2;
+        --primary-100: #fee2e2;
+        --primary-200: #fecaca;
+        --primary-300: #fca5a5;
+        --primary-400: #f87171;
+        --primary-500: #ef4444;
+        --primary-600: #dc2626;
+        --primary-700: #b91c1c;
+        --primary-800: #991b1b;
+        --primary-900: #7f1d1d;
+        --primary-950: #450a0a;
+      }
+      .bg-primary {
+        background-color: #ea2a2a;
+      }
+      .text-primary {
+        color: #ea2a2a;
+      }
+      .border-primary {
+        border-color: #ea2a2a;
+      }
+    </style>
+  </head>
+  <body class="bg-[#111827]">
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col bg-[#111827] dark group/design-root overflow-x-hidden"
+      style="font-family: 'Noto Sans KR', 'Inter', sans-serif">
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-800 px-10 py-4">
+          <div class="flex items-center gap-4 text-white">
+            <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_6_535)">
+                <path
+                  clip-rule="evenodd"
+                  d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                  fill="currentColor"
+                  fill-rule="evenodd"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_535"><rect fill="white" height="48" width="48"></rect></clipPath>
+              </defs>
+            </svg>
+            <h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">ClassMaster</h2>
+          </div>
+          <div class="flex flex-1 justify-end items-center gap-6">
+            <div class="hidden md:flex items-center gap-8">
+              <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#"
+                >Home</a
+              >
+              <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#"
+                >Explore</a
+              >
+              <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#"
+                >Create</a
+              >
+              <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#"
+                >Profile</a
+              >
+            </div>
+            <button
+              class="flex items-center justify-center rounded-full h-10 w-10 bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white transition-colors">
+              <span class="material-symbols-outlined"> notifications </span>
+            </button>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAnPcx6_KJU6xoFe-q9pves9Ox9u5JySmDbdQzivp6qzmGtpvMSrr9kcUXcyntiqkszApIeMBwv5u9fUHJejcfMbg3Thl28WUe7eIMtfrCDkVvR0FoV8mLRzazxMkGiwlGxdHUvlwAx0_nY0sMBhH35PO8tF2Vhh8y5yYcXgK2SUuTjvS7aGJjmuud4QhwsSSIO9CXe5c80i7RcqlnLTyCiUZ3UcNAZDMCFi4BGL1iMWet9ZscpCVgJ0HuEiqFZowYx_OtTQLSM-HRV');
+              "></div>
+          </div>
+        </header>
+        <div class="flex flex-1 justify-center py-16 px-4 sm:px-6 lg:px-8">
+          <div class="layout-content-container flex flex-col w-full max-w-5xl">
+            <div class="text-center mb-12">
+              <h1 class="text-white text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
+                당신에게 맞는 플랜을 선택하세요
+              </h1>
+              <p class="mt-4 text-lg text-gray-400">언제든지 플랜을 변경하거나 취소할 수 있습니다.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div
+                class="flex flex-col gap-6 rounded-xl border border-gray-800 bg-gray-900/50 p-8 transform hover:-translate-y-1 transition-transform duration-300">
+                <div class="text-center">
+                  <h2 class="text-white text-2xl font-bold leading-tight">기본</h2>
+                  <p class="flex items-baseline justify-center gap-1 text-white mt-4">
+                    <span class="text-5xl font-black leading-tight tracking-[-0.033em]">50,000원</span>
+                    <span class="text-gray-400 text-lg font-semibold">/월</span>
+                  </p>
+                </div>
+                <ul class="flex flex-col gap-4 text-gray-300">
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">check_circle</span>
+                    <span>기본 강좌 이용</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">check_circle</span>
+                    <span>제한된 자료</span>
+                  </li>
+                </ul>
+                <button
+                  class="w-full mt-auto flex items-center justify-center rounded-lg h-12 px-6 bg-gray-800 text-white text-base font-bold hover:bg-gray-700 transition-colors">
+                  <span>기본 플랜 선택</span>
+                </button>
+              </div>
+              <div
+                class="relative flex flex-col gap-6 rounded-xl border-2 border-primary bg-gray-900 p-8 shadow-2xl shadow-primary/20 scale-105">
+                <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                  <div class="bg-primary text-white text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full">
+                    가장 인기있는
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h2 class="text-primary text-2xl font-bold leading-tight">프리미엄</h2>
+                  <p class="flex items-baseline justify-center gap-1 text-white mt-4">
+                    <span class="text-5xl font-black leading-tight tracking-[-0.033em]">68,000원</span>
+                    <span class="text-gray-400 text-lg font-semibold">/월</span>
+                  </p>
+                </div>
+                <ul class="flex flex-col gap-4 text-gray-300">
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">check_circle</span>
+                    <span>모든 강좌 이용</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">check_circle</span>
+                    <span>무제한 자료</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">check_circle</span>
+                    <span>우선 지원</span>
+                  </li>
+                </ul>
+                <button
+                  class="w-full mt-auto flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold hover:bg-primary-600 transition-colors">
+                  <span>프리미엄 플랜 선택</span>
+                </button>
+              </div>
+              <div
+                class="flex flex-col gap-6 rounded-xl border border-gray-800 bg-gray-900/50 p-8 transform hover:-translate-y-1 transition-transform duration-300">
+                <div class="text-center">
+                  <h2 class="text-white text-2xl font-bold leading-tight">연간</h2>
+                  <p class="flex items-baseline justify-center gap-1 text-white mt-4">
+                    <span class="text-5xl font-black leading-tight tracking-[-0.033em]">550,000원</span>
+                    <span class="text-gray-400 text-lg font-semibold">/년</span>
+                  </p>
+                </div>
+                <ul class="flex flex-col gap-4 text-gray-300">
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">check_circle</span>
+                    <span>모든 강좌 이용</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">check_circle</span>
+                    <span>무제한 자료</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">check_circle</span>
+                    <span>우선 지원</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">check_circle</span>
+                    <span>독점 콘텐츠</span>
+                  </li>
+                </ul>
+                <button
+                  class="w-full mt-auto flex items-center justify-center rounded-lg h-12 px-6 bg-gray-800 text-white text-base font-bold hover:bg-gray-700 transition-colors">
+                  <span>연간 플랜 선택</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
