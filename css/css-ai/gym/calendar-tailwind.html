@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="w-full max-w-md mx-auto p-4 border rounded-lg shadow-lg bg-white">
+      <!-- 헤더 -->
+      <div class="flex justify-between items-center mb-4">
+        <button id="prev" class="px-2 py-1 bg-gray-200 rounded hover:bg-gray-300">◀</button>
+        <span id="month-year" class="font-bold text-lg">September 2025</span>
+        <button id="next" class="px-2 py-1 bg-gray-200 rounded hover:bg-gray-300">▶</button>
+      </div>
+
+      <!-- 요일 -->
+      <div class="grid grid-cols-7 text-center font-semibold text-gray-600 mb-2">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+
+      <!-- 날짜 -->
+      <div class="grid grid-cols-7 text-center gap-1" id="calendar-days">
+        <!-- JS로 날짜 채움 -->
+      </div>
+    </div>
+    <script src="./calendar-tailwind.js"></script>
+  </body>
+</html>
