@@ -21,3 +21,18 @@ console.log(`false || false: ${falseData || falseData}`); // false
 // !(NOT) 연산자: 1개의 논리형 데이터만 필요. 참이면 거짓 생성, 거짓이면 참 생성
 console.log(`!true: ${!trueData}`); // false
 console.log(`!false: ${!falseData}`); // true
+
+// 같다 == vs. === 다르다 != vs !==
+// == / !=
+// 동등 비교
+// 값만 비교
+// 서로 다른 자료형을 비교하면 자료형을 동일하게 변환
+// 절대 사용 금지
+const number = 1;
+const str = "1";
+console.log(number == str); // true
+
+// === / !==
+// 동등 비교
+// 데이터 간의 자료형 비교
+console.log(number === str); // false

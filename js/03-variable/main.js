@@ -43,8 +43,8 @@ console.log(message5);
 // const : 변하지 않는 데이터를 저장하는 변수 선언 방식
 
 // 대소문자 구분하기 때문에 두 변수는 다른변수
-let message;
-let Message;
+let message1;
+let Message1;
 
 // 카멜 케이스 적용전
 let hellomessage;
@@ -56,5 +56,7 @@ let helloMessage;
 // 1. 문자열을 백틱으로 표현
 // 2. ${변수명} 형태로 변수 삽입
 let name = "홍길동";
-let greet = "안녕하세요 ${name} 입니다.";
+let greet = `안녕하세요 ${name} 입니다.`;
 console.log(greet); // 안녕하세요 ${name} 입니다.
+
+// 
