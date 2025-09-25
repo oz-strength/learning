@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 19-form/index.html -->
+    <form id="form">
+      <input type="password" name="password" />
+      <input type="password" name="password-confirm" />
+      <input type="submit" value="" />
+    </form>
+
+    <script>
+      // id 속성이 form 인 요소를 선택하고, 변수에 할당
+      // 변수의 이름 : formTag
+      const formTag = document.querySelector("#form");
+
+      // 이벤트 리스너 등록, addEventListener
+      // 이벤트 종류 : submit
+      // 이벤트 핸들러 함수 : () => {console.log("제출")}
+
+      formTag.addEventListener("submit", (event) => {
+        // 기본 동작(이벤트) 막기
+        event.preventDefault();
+
+        // 제출을 했을 때
+        // name 속성이 password 인 입력 요소의 값(value)과
+        // name 속성이 password-confirm 인 입력 요소의 값이
+        // 동일한지 확인하는 코드를 작성
+        // 같으면 "같습니다" 출력 / 다르면 "다릅니다" 출력
+
+        // formTag["elements"]: 폼이 가진 모든 입력 요소를 저장
+        const password = formTag["elements"]["password"];
+        const passwordConfirm = formTag["elements"]["password-confirm"];
+        if (password["value"] === passwordConfirm["value"]) {
+          console.log("같습니다");
+        } else {
+          console.log("다릅니다");
+        }
+      });
+    </script>
+  </body>
+</html>
