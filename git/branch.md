@@ -14,6 +14,14 @@
 
 - 해당 브랜치로 이동
 
+### `git branch -d <branch-name>`
+
+- 해당 브랜치를 삭제 (병합된 브랜치만 삭제 가능)
+
+### `git branch -D <branch-name>`
+
+- 해당 브랜치를 강제로 삭제 (병합되지 않은 브랜치도 삭제 가능)
+
 ### 서브 브랜치 워크플로우
 
 1. 브랜치 생성 : `git branch <branch-name>`
