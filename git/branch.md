@@ -13,3 +13,12 @@
 ### `git switch <branch-name>`
 
 - 해당 브랜치로 이동
+
+### 서브 브랜치 워크플로우
+
+1. 브랜치 생성 : `git branch <branch-name>`
+2. 브랜치 이동 : `git switch <branch-name>`
+3. 작업 수행 및 커밋 : `git add .` -> `git commit -m "commit message"`
+4. 메인 브랜치로 이동 : `git switch main`
+5. 메인 브랜치에 서브 브랜치 병합 : `git merge <branch-name>`
+6. (선택) 불필요한 서브 브랜치 삭제 : `git branch -d <branch-name>` => 추후 문제 발생 가능 : 동일한 브랜치 이름으로 재생성 불가
