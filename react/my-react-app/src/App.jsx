@@ -1,12 +1,11 @@
-import React from "react";
+import OnClick from "./components/EventHandling/OnClick";
+import OnSubmit from "./components/EventHandling/OnSubmit";
 
-import MyList from "./components/Component/MyList";
-import MyButton from "./components/Component/MyButton";
 export default function App() {
   return (
-    <div>
-      <MyList />
-      <MyButton />
-    </div>
+    <>
+      <OnSubmit />
+      <OnClick />
+    </>
   );
 }
