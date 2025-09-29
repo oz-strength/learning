@@ -1,11 +1,9 @@
-import OnClick from "./components/EventHandling/OnClick";
-import OnSubmit from "./components/EventHandling/OnSubmit";
+import ProfileContainer from "./components/PropsExample/ProfileContainer";
 
 export default function App() {
   return (
     <>
-      <OnSubmit />
-      <OnClick />
+      <ProfileContainer />
     </>
   );
 }
