@@ -1,10 +1,9 @@
-import ProfileContainer from "./components/PropsExample/ProfileContainer";
-import CardContainer from "./components/PropsFunction/CardContainer";
+import Parent from "./components/PropsChildren/Parent";
 
 export default function App() {
   return (
-    <>
-      <CardContainer />
+    <>  
+      <Parent />
     </>
   );
 }
