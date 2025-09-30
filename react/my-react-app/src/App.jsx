@@ -1,4 +1,4 @@
-import Container from "./components/Condition/Container";
+import Container from "./components/List/Container";
 
 export default function App() {
   return (
