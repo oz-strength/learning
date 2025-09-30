@@ -1,9 +1,9 @@
-import Parent from "./components/PropsChildren/Parent";
+import Container from "./components/Condition/Container";
 
 export default function App() {
   return (
-    <>  
-      <Parent />
+    <>
+      <Container />
     </>
   );
 }
