@@ -1,9 +1,9 @@
-import MovieSearch from "./components/TMDB/MovieSearch";
+import MovieList from "./components/TMDB/MovieList";
 
 export default function App() {
   return (
     <>
-      <MovieSearch />
+      <MovieList />
     </>
   );
 }

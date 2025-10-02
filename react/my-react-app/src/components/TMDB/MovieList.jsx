@@ -1,30 +1,12 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
-
-const BASE_URL = `https://api.themoviedb.org/3`;
-const API_KEY = import.meta.env["VITE_TMDB_API_KEY"];
-
+import { getPopularMovies } from "../../api/tmdb";
 export default function MovieList() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const config = {
-        method: "GET",
-        url: `${BASE_URL}/movie/popular`,
-        headers: {
-          "Content-Type": "application/json",
-          accept: "application/json",
-          Authorization: `Bearer ${API_KEY}`,
-        },
-        params: {
-          language: "ko-KR",
-          page: 1,
-        },
-      };
-
-      const res = await axios(config);
-      setMovies(res["data"]["results"]);
+      const res = await getPopularMovies();
+      setMovies(res.data.results);
     }
 
     fetchData();
