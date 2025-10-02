@@ -1,9 +1,9 @@
-import Container from "./components/UseEffect/Container";
+import MovieSearch from "./components/TMDB/MovieSearch";
 
 export default function App() {
   return (
     <>
-      <Container />
+      <MovieSearch />
     </>
   );
 }
