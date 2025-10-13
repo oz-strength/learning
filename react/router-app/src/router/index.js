@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 // 레이아웃 컴포넌트 불러오기
 import AuthLayout from "../layout/AuthLayout";
+import ProtectedLayout from "../layout/ProtectedLayout";
 import RootLayout from "../layout/RootLayout";
 
 // 페이지 컴포넌트 불러오기
@@ -21,7 +22,12 @@ const router = createBrowserRouter([
       // 중첩할 자식 경로 객체를 정의하는 배열
       { index: true, Component: Home }, // index: true -> path: "/" 와 동일
       { path: "about", Component: About },
-      { path: "profile", Component: Profile },
+      {
+        // path 속성 없음
+        Component: ProtectedLayout,
+        // 보호할 경로와 컴포넌트 정의
+        children: [{ path: "profile", Component: Profile }],
+      },
     ],
   },
   {
