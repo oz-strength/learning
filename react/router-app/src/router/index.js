@@ -26,10 +26,13 @@ import DummyHome from "../pages/DummyPages/DummyHome.jsx";
 import Posts from "../pages/DummyPages/Posts.jsx";
 import Products from "../pages/DummyPages/Products.jsx";
 
+// 경로 상수 불러오기
+import PATHS from "../constants/path.js";
+
 // 라우터 설정 생성
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: PATHS.ROOT.INDEX, // "/" (최상위 경로)
     Component: RootLayout,
     children: [
       // 중첩할 자식 경로 객체를 정의하는 배열
@@ -39,15 +42,15 @@ const router = createBrowserRouter([
         Component: Home,
       },
       {
-        path: "about",
+        path: PATHS.ROOT.ABOUT, // "/about"
         Component: About,
       },
       {
-        path: "posts",
+        path: PATHS.ROOT.POSTS, // "/posts"
         Component: PostList,
       },
       {
-        path: "posts/:postId",
+        path: PATHS.ROOT.POST_DETAIL, // "/posts/:postId"
         Component: PostDetail,
       },
       {
@@ -56,7 +59,7 @@ const router = createBrowserRouter([
         // 보호할 경로와 컴포넌트 정의
         children: [
           {
-            path: "profile",
+            path: PATHS.ROOT.PROFILE, // "/profile"
             Component: Profile,
           },
         ],
@@ -65,7 +68,7 @@ const router = createBrowserRouter([
   },
   // AuthLayout 경로 설정
   {
-    path: "/auth",
+    path: PATHS.AUTH.INDEX, // "/auth"
     Component: AuthLayout,
     children: [
       {
@@ -74,18 +77,18 @@ const router = createBrowserRouter([
       },
       // 로그인 경로(path)와 Component 설정
       {
-        path: "login",
+        path: PATHS.AUTH.LOGIN,
         Component: Login,
       },
       // 회원가입 경로(path)와 Component 설정
       {
-        path: "signup",
+        path: PATHS.AUTH.SIGNUP,
         Component: Signup,
       },
     ],
   },
   {
-    path: "/dummy",
+    path: PATHS.DUMMY.INDEX,
     Component: DummyLayout,
     children: [
       {
@@ -93,17 +96,17 @@ const router = createBrowserRouter([
         Component: DummyHome,
       },
       {
-        path: "carts",
+        path: PATHS.DUMMY.CARTS,
         Component: Carts,
       },
       // 로그인 경로(path)와 Component 설정
       {
-        path: "posts",
+        path: PATHS.DUMMY.POSTS,
         Component: Posts,
       },
       // 회원가입 경로(path)와 Component 설정
       {
-        path: "products",
+        path: PATHS.DUMMY.PRODUCTS,
         Component: Products,
       },
     ],
