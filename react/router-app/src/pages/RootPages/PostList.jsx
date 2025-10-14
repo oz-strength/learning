@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
+import PATHS from "../../../../constants/path";
 
 export default function PostList() {
   const [posts, setPosts] = useState([]);
@@ -24,18 +25,26 @@ export default function PostList() {
   return (
     <>
       <div>
-        <button className="border-2 p-2 cursor-pointer" onClick={() => { 
-          setSearchParams({ sortBy: "id", order: "asc" });
-        }}>ID 오름차순</button>
-        <button className="border-2 p-2 cursor-pointer" onClick={() => { 
-          setSearchParams({ sortBy: "id", order: "desc" });
-        }}>ID 내림차순</button>
+        <button
+          className="border-2 p-2 cursor-pointer"
+          onClick={() => {
+            setSearchParams({ sortBy: "id", order: "asc" });
+          }}>
+          ID 오름차순
+        </button>
+        <button
+          className="border-2 p-2 cursor-pointer"
+          onClick={() => {
+            setSearchParams({ sortBy: "id", order: "desc" });
+          }}>
+          ID 내림차순
+        </button>
       </div>
       <div>
         {posts.map(post => {
           return (
             <div key={post.id}>
-              <Link to={`/posts/${post.id}`}>
+              <Link to={PATHS.ROOT.getPostDetail(post.id)}>
                 No. {post.id} - {post.title}
               </Link>
               <br />
