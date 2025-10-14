@@ -18,6 +18,7 @@ import Products from "../pages/DummyPages/Products.jsx";
 import PATHS from "../../../constants/path.js";
 
 // RootLayout 경로 배열 불러오기
+import NotFound from "../pages/NotFound.jsx";
 import authRoutes from "./routes/authRoute.js";
 import rootRoutes from "./routes/rootRoutes.js";
 
@@ -52,6 +53,7 @@ const router = createBrowserRouter([
       },
     ],
   },
+  { path: "*", Component: NotFound },
 ]);
 
 export default router;
