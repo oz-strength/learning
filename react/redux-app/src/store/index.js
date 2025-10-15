@@ -1,7 +1,8 @@
-export default function index () {
-  return (
-    <>
-      <h1>index Component</h1>
-    </>
-  );
-}
+import { configureStore } from "@reduxjs/toolkit";
+import counterReducer from "./counterSlice";
+
+export const store = configureStore({
+  reducer: {
+    counter: counterReducer,
+  },
+});

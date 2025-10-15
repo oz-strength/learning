@@ -9,5 +9,16 @@ const counterSlice = createSlice({
     increment(state) {
       state.count += 1;
     },
+    incrementByAmount(state, action) {
+      state.count += Number(action.payload);
+    },
+
+    // 상태 count를 0으로 초기화
+    reset(state) {
+      state.count = 0;
+    },
   },
 });
+
+export const { increment, incrementByAmount, reset } = counterSlice.actions;
+export default counterSlice.reducer;

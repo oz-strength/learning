@@ -1,7 +1,13 @@
+import Counter from "./components/Counter";
+import CounterIncrement from "./components/CounterIncrement";
+import CounterIncrementByAmount from "./components/CounterIncrementByAmount";
+
 export default function App() {
   return (
     <>
-      <h1>App Component</h1>
+      <Counter />
+      <CounterIncrement />
+      <CounterIncrementByAmount />
     </>
   );
 }
