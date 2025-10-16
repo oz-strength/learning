@@ -21,9 +21,9 @@ export default function Login() {
 
   useEffect(() => {
     if (token) {
-      alert("로그인 성공 !");
-      console.log(token);
-      navigate("/");
+      alert("로그인 상태입니다.");
+      // console.log(token);
+      // navigate("/profile");
     }
   }, [token, navigate]);
 
